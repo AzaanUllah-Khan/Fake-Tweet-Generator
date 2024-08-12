@@ -6,4 +6,5 @@ Array.from(inputs).forEach(element => {
 function start(){
     document.getElementById('nameX').textContent = document.getElementById('name').value
     document.getElementById('unameX').textContent = `@${document.getElementById('uname').value.toLowerCase()}`
+    document.getElementById('tweetText').textContent = document.getElementById('tt').value
 }
