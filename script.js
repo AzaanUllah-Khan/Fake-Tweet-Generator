@@ -4,5 +4,6 @@ Array.from(inputs).forEach(element => {
 });
 
 function start(){
-    alert("hey !");
+    document.getElementById('nameX').textContent = document.getElementById('name').value
+    document.getElementById('unameX').textContent = `@${document.getElementById('uname').value.toLowerCase()}`
 }
