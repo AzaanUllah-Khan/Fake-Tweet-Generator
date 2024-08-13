@@ -21,6 +21,8 @@ function start() {
     document.getElementById('unameX').textContent = `@${document.getElementById('uname').value.toLowerCase()}`;
     document.getElementById('tweetText').textContent = document.getElementById('tt').value;
     document.getElementById('tweetDate').textContent = document.getElementById('dtime').value;
+    document.getElementById('postRetweets').textContent = document.getElementById('ret').value;
+    document.getElementById('postLikes').textContent = document.getElementById('likes').value;
     const timeInput = document.getElementById('time').value;
     let [hours, minutes] = timeInput.split(':');
     hours = parseInt(hours, 10);
