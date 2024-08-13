@@ -20,4 +20,20 @@ function start() {
     document.getElementById('nameX').textContent = document.getElementById('name').value;
     document.getElementById('unameX').textContent = `@${document.getElementById('uname').value.toLowerCase()}`;
     document.getElementById('tweetText').textContent = document.getElementById('tt').value;
-}
+    const timeInput = document.getElementById('time').value;
+    let [hours, minutes] = timeInput.split(':');
+    hours = parseInt(hours, 10);
+    
+    let period = "AM";
+    if (hours >= 12) {
+        period = "PM";
+        if (hours > 12) {
+            hours -= 12;
+        }
+    } else if (hours === 0) {
+        hours = 12;
+    }
+    
+    const formattedTime = `${hours}:${minutes} ${period}`;
+    document.getElementById('tweetTime').textContent = formattedTime;
+    }
