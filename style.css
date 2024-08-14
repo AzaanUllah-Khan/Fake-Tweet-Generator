@@ -23,6 +23,9 @@ body{
     height: 80vh;
     overflow-y: auto;
 }
+::-webkit-scrollbar {
+    width: 0;
+}
 .form .input{
     display: flex;
     flex-direction: column;
