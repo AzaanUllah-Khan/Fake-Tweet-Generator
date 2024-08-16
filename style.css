@@ -51,7 +51,6 @@ body{
 .preview{
     background-color: white;
     width: 500px;
-    height: 80vh;
     padding: 15px 10px;
 }
 .straight{
@@ -89,6 +88,7 @@ body{
 .preview p#tweetText{
     margin-top: 15px;
     font-size: 18px;
+    color: #333;
 }
 .preview img#postPic{
     width: 100%;
@@ -97,10 +97,23 @@ body{
 }
 .straight a{
     color: #4286f4;
+    font-size: 14px;
 }
 .preview .straight:nth-child(4){
-    margin: 7px 0;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.preview .straight:nth-child(5){
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.preview .straight:nth-child(5) p{
+    font-size: 16px;
+    color: #333;
 }
 .preview .straight:nth-child(4) span{
     color: #555;
+    font-size: 14px;
 }
