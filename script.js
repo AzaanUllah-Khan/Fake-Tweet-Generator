@@ -23,6 +23,8 @@ function start() {
     document.getElementById('tweetDate').textContent = document.getElementById('dtime').value;
     document.getElementById('postRetweets').textContent = document.getElementById('ret').value;
     document.getElementById('postLikes').textContent = document.getElementById('likes').value;
+    document.getElementById('heart').style.color = document.getElementById('liked').checked ? "red" : "#555";
+    document.getElementById('retwe').style.color = document.getElementById('reed').checked ? "green" : "#555";
     const timeInput = document.getElementById('time').value;
     let [hours, minutes] = timeInput.split(':');
     hours = parseInt(hours, 10);
