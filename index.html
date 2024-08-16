@@ -7,6 +7,7 @@
     <link rel="icon" href="./Assets/56045386736.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <div class="form">
@@ -58,8 +59,9 @@
             <label for="reed">Retweeted</label>
             <input type="checkbox" id="reed">
         </div>
+        <button id="screenshotBtn">Take Screenshot</button>
     </div>
-    <div class="preview">
+    <div class="preview" id="mainn">
         <div class="straight">
             <img src="" id="profilePic">
             <div class="top">
