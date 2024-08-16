@@ -22,7 +22,6 @@ body{
     border-radius: 10px;
     background-color: rgba(251, 251, 251, 0.3);
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.04);
-    width: 500px;
     width: 100%;
     overflow-y: auto;
 }
@@ -141,4 +140,14 @@ body{
    font-weight: lighter;
    font-size: 20px;
    color: #555;
+}
+@media screen and (max-width: 600px) {
+    body{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .preview{
+        width: 100%;
+    }
 }
