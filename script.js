@@ -1,4 +1,4 @@
-const inputs = document.getElementsByTagName('input');
+  const inputs = document.getElementsByTagName('input');
 Array.from(inputs).forEach(element => {
     element.addEventListener('input', start);
 });
